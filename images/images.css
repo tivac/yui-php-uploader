@@ -1,0 +1,28 @@
+#images { width: 100%; margin: 5px auto auto; font-size: 0;/*eliminate the extra white-space between  */ }
+#images li { width: 210px; margin: 0 5px 10px; vertical-align: text-bottom; font-size: 13px; border: 1px solid #CCC;
+             display:-moz-inline-stack; /*FF*/ display:inline-block; /*Opera/FF3*/ _overflow: hidden;/*IE6*/ zoom: 1;/*IE*/ *display:inline;/*IE*/ 
+}
+#images li div.bd { position: relative;/*FF*/ margin: 2px 5px 1px; padding: 5px 0 10px; zoom: 1;/*IE*/ }
+#images li div.bd a.img { display: block; text-align: center; }
+#images li div.bd a.del { background: url(http://tivac.com/images/silk/delete.png) no-repeat 2px; 
+                          display: block; margin-left: auto; margin-right: auto; width: 4em; padding-left: 20px; }
+                          
+.pagination { margin: 20px 0; text-align: center; 
+              font-size: 0; /* eliminate the extra white-space */ }
+.pagination li { margin: 0 2px 0; text-align: center; font-size: 13px;
+    display:-moz-inline-stack;/* FF2 */ 
+    display:inline-block; /* Opera, Safari, FF3 */
+    _overflow: hidden; /* IE6 */
+    zoom: 1; /* IE6/7 trigger hasLayout*/
+    *display:inline; /*IE6/7 display:inline on block element with hasLayout it inline-block */
+}
+.pagination li a { color: #2290D6; }
+.pagination li a,
+.pagination li strong { display: block; 
+                        position: relative; /* FF2 fixes */ 
+                        zoom: 1;/* IE6/7 needs this for border */ 
+                        _display: inline; /* IE6 doesn't like blocking */ }
+.pagination a,
+.pagination strong { padding: 2px 4px; border: 1px solid #999; font-weight: bold; text-decoration: none; }
+.pagination strong,
+.pagination a:hover { border-color: #FFF; background-color: #2290D6; color: #FFF; text-decoration: none; }

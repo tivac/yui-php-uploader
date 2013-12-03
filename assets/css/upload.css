@@ -1,0 +1,5 @@
+.content { width: 600px; margin: auto; }
+.content .hd,
+.content .ft { text-align: center; }
+
+.content .bd { height: 400px; overflow-y: auto; }
